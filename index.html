@@ -1,0 +1,1491 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="Description" content="">
+	<meta name="google-site-verification" content="BpKV8ACa6IfqcrHj3UvllzGTcGst4ydpgHYLmVS3kY0" />
+	<title>Free Live Traffic Feed</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" media="screen" type="text/css" href="http://feedjit.com/static/homeStyle.css" />
+	<link type="text/css" rel="StyleSheet" href="http://feedjit.com/slider/luna.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="http://feedjit.com/js/colpick/css/colorpicker.css" />
+	<style type="text/css">
+	.header {
+		width: 50%;
+		float: left;
+		margin-bottom: 20px;
+	}
+	#greetingModal {
+		position: fixed;
+		width: 100%;
+		text-align: center;
+		display: none;
+	}
+	#greetingModal h1 {
+		font-size: 100px;
+		color: forestgreen;
+	}
+	.custBottom {
+		left: 0;
+	}
+	</style>
+</head>
+<body>
+	<div id="mainDiv">
+		<div>
+			<div class="header">
+				<h3 class="today"></h3>
+				<p class="today"></p>
+			</div>
+			<div class="header">
+				<h3 class="tomorrow"></h3>
+				<p class="tomorrow"></p>
+			</div>					
+		</div>
+		<div id="leftContainer">
+			<div id="leftContent">
+				<div id="customizeDiv" style="background-color: #FFF;">	
+					<div class="contentInner rounded2">
+						<div class="contentInner2">
+							<div class="contentHeading">PERSONALIZE YOUR FEED</div>
+							<div class="custLeft" style="padding-bottom: 10px;">
+								<div class="custHeading">
+									Select a color scheme:
+								</div>
+								<div style="position: relative;">
+									<a href="#" id="colorModalLink"><img src="http://feedjit.com/images/getFeedjit/clickToSelect.png" width="161" height="40" alt="" border="0" /></a>
+									<div id="colorModal" class="modal rounded2 zIndex6" style="display: none;">
+									</div>
+									<div id="colorModalInner" class="modalInner zIndex7" style="display: none;">
+										<div class="modalHeading">
+											<div class="modalCloseX">
+												<a href="#" id="btnHide"><img src="http://feedjit.com/images/getFeedjit/closex.png" width="12" height="14" alt="" border="0" /></a>
+											</div>
+											<div class="colorModalHeadingText">
+												LIGHT COLOR SCHEMES
+											</div>
+											<div class="colorModalHeadingText">
+												DARK COLOR SCHEMES
+											</div>
+										</div>
+										<div class="modBox modLeftBox">
+											<table border="0" cellpadding="2" cellspacing="0">
+											<tr>
+												<td></td>
+												<td><span class="schemeName"></span></td>
+											</tr>
+											<tr>
+												<td><input type="radio" name="colorScheme" value="0" /></td>
+												<td>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+												</td>
+											</tr>
+											</table>
+										</div>
+										<div class="modBox modRightBox">
+											<table border="0" cellpadding="2" cellspacing="0">
+											<tr>
+												<td></td>
+												<td><span class="schemeName"></span></td>
+											</tr>
+											<tr>
+												<td><input type="radio" name="colorScheme" value="0" /></td>
+												<td>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+												</td>
+											</tr>
+											</table>
+										</div>
+										<div class="modBox modLeftBox">
+											<table border="0" cellpadding="2" cellspacing="0">
+											<tr>
+												<td></td>
+												<td><span class="schemeName"></span></td>
+											</tr>
+											<tr>
+												<td><input type="radio" name="colorScheme" value="0" /></td>
+												<td>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+												</td>
+											</tr>
+											</table>
+										</div>
+										<div class="modBox modRightBox">
+											<table border="0" cellpadding="2" cellspacing="0">
+											<tr>
+												<td></td>
+												<td><span class="schemeName"></span></td>
+											</tr>
+											<tr>
+												<td><input type="radio" name="colorScheme" value="0" /></td>
+												<td>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+												</td>
+											</tr>
+											</table>
+										</div>
+										<div class="modBox modLeftBox">
+											<table border="0" cellpadding="2" cellspacing="0">
+											<tr>
+												<td></td>
+												<td><span class="schemeName"></span></td>
+											</tr>
+											<tr>
+												<td><input type="radio" name="colorScheme" value="0" /></td>
+												<td>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+												</td>
+											</tr>
+											</table>
+										</div>
+										<div class="modBox modRightBox">
+											<table border="0" cellpadding="2" cellspacing="0">
+											<tr>
+												<td></td>
+												<td><span class="schemeName"></span></td>
+											</tr>
+											<tr>
+												<td><input type="radio" name="colorScheme" value="0" /></td>
+												<td>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+												</td>
+											</tr>
+											</table>
+										</div>
+										<div class="modBox modLeftBox">
+											<table border="0" cellpadding="2" cellspacing="0">
+											<tr>
+												<td></td>
+												<td><span class="schemeName"></span></td>
+											</tr>
+											<tr>
+												<td><input type="radio" name="colorScheme" value="0" /></td>
+												<td>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+												</td>
+											</tr>
+											</table>
+										</div>
+										<div class="modBox modRightBox">
+											<table border="0" cellpadding="2" cellspacing="0">
+											<tr>
+												<td></td>
+												<td><span class="schemeName"></span></td>
+											</tr>
+											<tr>
+												<td><input type="radio" name="colorScheme" value="0" /></td>
+												<td>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+												</td>
+											</tr>
+											</table>
+										</div>
+										<div class="modBox modLeftBox">
+											<table border="0" cellpadding="2" cellspacing="0">
+											<tr>
+												<td></td>
+												<td><span class="schemeName"></span></td>
+											</tr>
+											<tr>
+												<td><input type="radio" name="colorScheme" value="0" /></td>
+												<td>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+												</td>
+											</tr>
+											</table>
+										</div>
+										<div class="modBox modRightBox">
+											<table border="0" cellpadding="2" cellspacing="0">
+											<tr>
+												<td></td>
+												<td><span class="schemeName"></span></td>
+											</tr>
+											<tr>
+												<td><input type="radio" name="colorScheme" value="0" /></td>
+												<td>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+													<div class="mSwatch" style="background-color: #3366CC;"></div>
+
+												</td>
+											</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="custRight">
+								<div class="custHeading">
+									Customize your color scheme:
+								</div>
+								<table border="0" cellpadding="0" cellspacing="0" class="swatchTable">
+								<tr>
+									<td>Background:</td>
+									<td><div class="colorSwatchOuter"><div class="colorSwatchInner"><div class="swatch" id="bc_traf"></div></div></div></td>
+									<td>&nbsp;&nbsp;</td>
+									<td>Header Text:</td>
+									<td><div class="colorSwatchOuter"><div class="colorSwatchInner"><div class="swatch" id="hc_traf"></div></div></div></td>
+								</tr><tr>
+									<td>Header:</td>
+									<td><div class="colorSwatchOuter"><div class="colorSwatchInner"><div class="swatch" id="hfc_traf"></div></div></div></td>
+									<td>&nbsp;&nbsp;</td>
+									<td>Normal Text:</td>
+									<td><div class="colorSwatchOuter"><div class="colorSwatchInner"><div class="swatch" id="tc_traf"></div></div></div></td>
+								</tr><tr>
+									<td>Border:</td>
+									<td><div class="colorSwatchOuter"><div class="colorSwatchInner"><div class="swatch" id="brd1_traf"></div></div></div></td>
+									<td>&nbsp;&nbsp;</td>
+									<td>Link Text:</td>
+									<td><div class="colorSwatchOuter"><div class="colorSwatchInner"><div class="swatch" id="lnk_traf"></div></div></div></td>
+								</tr><tr>
+									<td>Button:</td>
+									<td><div class="colorSwatchOuter"><div class="colorSwatchInner"><div class="swatch" id="btn_traf"></div></div></div></td>
+									<td>&nbsp;&nbsp;</td>
+								</tr>
+								</table>
+							</div>
+							<div class="custLeft" style="padding-top: 0px;">
+								<table border="0" cellpadding="0" cellspacing="0"><tr>
+								<tr><td colspan="3" class="custHeading">Select widget width (pixels):</td></tr>
+								<tr><td style="padding-bottom: 10px;">
+									<div id="slider" tabIndex="1" class="sliderDiv">
+										<input class="slider-input" id="sliderInput" name="sliderInput" />
+									</div>
+								</td><td>&nbsp;</td><td style="vertical-align: middle; padding-bottom: 10px;">
+									<input type="text" maxlength="3" value="300" id="sliderWidthNum" class="sliderNum" disabled/>
+								</td></tr>
+								<tr><td colspan="3" class="custHeading">Number of visitors shows:</td></tr>
+								<tr>
+									<td style="padding-bottom: 10px;">
+										<div id="slider2" class="sliderDiv">
+											<input class="slider-input" id="sliderInput2" name="sliderInput2" />
+										</div>
+									</td>
+									<td>&nbsp;</td>
+									<td style="vertical-align: middle; padding-bottom: 10px;">
+										<input type="text" maxlength="3" value="10" id="sliderEntriesNum" class="sliderNum" disabled/>
+									</td>
+								</tr>
+								</table>
+							</div>
+							<div class="custBottom roundedBottom">
+								<div class="smallHeading" style="font-size: 16px;">Got your colors picked out?<br />Select where to install Feed and click Go!</div>
+								<div style="position: relative; padding: 20px 0 20px 0;">
+									<div class="blogPickFloat" style="font-size: 12px; font-weight: bold;">
+										Install Feed on my: 
+									</div>
+									<a href="#" id="blogSelector" class="wideDropList" ></a>
+									<div id="blogModal" class="modal zIndex6 rounded2" style="display: none;">
+									</div>
+									<div id="blogModalInner" class="modalInner zIndex7" style="display: none;">
+										<div class="modalHeading">
+											YOU WANT TO INSTALL FEED ON YOUR:
+											<div class="modalCloseX">
+												<a href="#" onclick="blogModal.hide(); return false;"><img src="http://feedjit.com/images/getFeedjit/closex.png" width="12" height="14" alt="" border="0" /></a>
+											</div>
+											<div id="blogModalBody">
+												<div><input type="radio" name="blogType" value="getInstagram" /><img src="http://feedjit.com/images/getFeedjit/selBlogger.png" width="18" height="18" alt="" border="0" />Instagram Feed</div>
+												<div><input type="radio" name="blogType" value="getBlogger" /><img src="http://feedjit.com/images/getFeedjit/selBlogger.png" width="18" height="18" alt="" border="0" />Blogger Blog</div>
+												<div><input type="radio" name="blogType" value="getWordpress" /><img src="http://feedjit.com/images/getFeedjit/selWordpress.png" width="18" height="18" alt="" border="0" />Wordpress.org Blog</div>
+												<div><input type="radio" name="blogType" value="getOther" /><img src="http://feedjit.com/images/getFeedjit/selOther.png" width="18" height="18" alt="" border="0" />Other Blog or Website</div>
+											</div>
+										</div>	
+									</div>
+									<a href="#" onclick="fj.logEvent('homeActions', 'homeGoClicked'); fj.showDiv($('#blogModalBody input:radio:checked').val()); return false;" id="goButton"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<DIV id="getInstagram" style="display: none;">
+					<div class="contentInner rounded2">
+						<div class="contentHeading">INSTRUCTIONS FOR INSTALLING ON INSTAGRAM</div>
+						<div class="contentPadding">
+							<div class="instructDiv">
+								Insert following code into "head" tag.
+								<textarea READONLY style="width: 450px; height: 100px; font-size: 10px;" id="instagramHead_traf" onclick="this.select();">
+								</textarea>
+								Insert following code into "body" tag.
+								<textarea READONLY style="width: 450px; height: 200px; font-size: 10px;" id="instagramTextarea_traf" onclick="this.select();">
+								</textarea>
+							</div>
+						</div>
+						<div style="border: 1p solid #F00; position: absolute; right: 20px; bottom: 10px; width: 100p; height: 20px;"><a href="#" onclick="fj.showDiv('customizeDiv'); return false;" style="text-decoration: underline;">&laquo;&nbsp;Return to customize page</a></div>
+					</div>
+				</DIV>
+				<DIV id="getWordpress" style="display: none;">
+					<div class="contentInner rounded2">
+						<div class="contentHeading">INSTRUCTIONS FOR INSTALLING ON WORDPRESS</div>
+						<div class="contentPadding">
+							<div class="instructDiv">
+								1. Sign into your WordPress blog or website<br /><br />
+								2. Go to "Appearance" and then the "Widgets" submenu.<br /><br />
+								3. Add a text widget to your sidebar. You should be able to drag the text widget from the list of widgets on the left into your sidebar.<br /><br />
+								4. Give it a title and then paste in the code below.<br /><br />
+								That's it!! Easy as pie. You're now watching your traffic in real-time.<br /><br />
+								<textarea READONLY style="width: 450px; height: 60px; font-size: 10px;" id="wordpressTextarea_traf" onclick="this.select();">
+								</textarea>
+							</div>
+						</div>
+						<div style="border: 1p solid #F00; position: absolute; right: 20px; bottom: 10px; width: 100p; height: 20px;"><a href="#" onclick="fj.showDiv('customizeDiv'); return false;" style="text-decoration: underline;">&laquo;&nbsp;Return to customize page</a></div>
+					</div>
+				</DIV>
+				<DIV id="getBlogger" style="display: none;">
+					<div class="contentInner rounded2">
+						<div class="contentHeading">INSTRUCTIONS FOR INSTALLING ON BLOGGER</div>
+						<div class="contentPadding">
+							<div class="instructDiv">
+								<img src="http://feedjit.com/images/getFeedjit/bloggerIcon.jpg" width="100" height="100" alt="" class="instructLogo" />
+								We've created a two step installation process for Blogger. Click the first button below to sign-in to Blogger. Then close that window and click the second button to
+								install Feed.
+								<br clear="left" />
+								<br clear="left" />
+								<form action="http://blogger.com/" target="_blank" method="GET">
+									<input type="submit" name="s" value="STEP 1: Click here to sign into Blogger in a new window." style="width: 400px;" /><br />
+									<span style="font-size: 11px;">If you're already signed in when the window opens, simply close it and click step 2.</span><br />
+								</form>
+								<br />
+								<form method="POST" action="http://www.blogger.com/add-widget" target="_blank" id="bloggerForm" style="margin: 0; padding: 0;">
+									<input type="hidden" name="widget.title" value="Feed" />
+									<textarea name="widget.content" id="bloggerTextarea1_traf" style="display: none;">
+									</textarea>
+									<input type="hidden" name="widget.template" value="&lt;data:content/&gt;" />
+									<input type="hidden" name="infoUrl" value="http://feedjit.com/" />
+									<input type="hidden" name="logoUrl" value="http://feedjit.com/http://feedjit.com/images/logos/smallLogo.gif"/>
+									<input type="submit" name="submit" value="STEP 2: Click here to install Feed now that you're signed in" style="width: 400px;" />
+								</form>
+							</div>
+							<div>
+								<p>
+									If the above doesn't work, you can sign into Blogspot. From the "My Blogs" dashboard, click your blog. Then click the "Layout" 
+									menu on the left and click "Add a Gadget". Select HTML/Javascript. Give the Gadget a heading, copy and paste the code below into the body, hit Save and you're done.
+								</p>
+								<p>
+									<textarea READONLY style="width: 450px; height: 40px; font-size: 10px;" id="bloggerTextarea2_traf" onclick="this.select();">
+									</textarea>
+								</p>
+							</div>
+						</div>
+						<div style="border: 1p solid #F00; position: absolute; right: 20px; bottom: 10px; width: 100p; height: 20px;"><a href="#" onclick="fj.showDiv('customizeDiv'); return false;" style="text-decoration: underline;">&laquo;&nbsp;Return to customize page</a></div>
+					</div>
+				</DIV>
+				<DIV id="getOther" style="display: none;">
+					<div class="contentInner rounded2">
+						<div class="contentHeading">INSTRUCTIONS FOR INSTALLING ANY BLOG OR WEBSITE</div>
+						<div class="contentPadding">
+							<center>
+								Cut and paste the code below into your blog's sidebar template:<br />
+								<textarea style="width: 450px; height: 65px; color: #999; font-size: 10px; font-family: Arial; text-align: left;" READONLY onclick="this.select();" id="cutPasteTextarea1"></textarea>
+							</center>
+							<p>
+								All you need to do is copy the code above into the HTML code of your blog or website. If you're not a web designer and need a little help, here are a few tips:
+								<br /><br />
+								You are going to install Feed in your site's sidebar so that it loads on every page.
+								To do this you need to edit your blog or website template.
+								Read your blog hosts documentation on how to edit your site template. 
+								<br /><br />
+								When you are ready, sign-into your website and edit the template for your sidebar. 
+								Look at the structure of other elements in your sidebar. Often they will be contained in &lt;li&gt;&lt;/li&gt; or &lt;div&gt;&lt;/div&gt; tags.
+								<br /><br />
+								Create a new pair of container elements in your sidebar HTML e.g. &lt;div&gt;&lt;/div&gt; and <b>paste the code above</b> between those elements.
+								Save your sidebar template, hit your home page and you should see Feed appear. Congratulations!
+							</p>
+
+						</div>
+						<div style="border: 1p solid #F00; position: absolute; right: 20px; bottom: 10px; width: 100p; height: 20px;"><a href="#" onclick="fj.showDiv('customizeDiv'); return false;" style="text-decoration: underline;">&laquo;&nbsp;Return to customize page</a></div>
+					</div>
+				</DIV>
+			</div>
+		</div>
+		<div id="previewDiv" style="background-color: transparent; padding-top: 0px; margin-top: 0px;">
+			<script type="text/javascript" src="http://feedjit.com/serve/?hfce=1&vv=321&amp;dd=98961e3ccdd02b4a8f25c22c9d0b200d&amp;wid=7ffe369ffa4ea809&amp;pid=a0117352e993dfb4&amp;bc=FFFFFF&tc=494949&brd1=336699&lnk=494949&hc=FFFFFF&hfc=336699&btn=629CB3&amp;ww=&amp;wh=Live%20Traffic%20Feed&amp;hl=0&amp;hlnks=0&amp;fhst=feedjit.com&amp;tft=2&amp;previewMode=1"></script><noscript><a href="http://feedjit.com/">Feed Live Blog Stats</a></noscript>
+		</div>		
+	</div>
+	<div id="greetingModal">
+		<h1 class="fa fa-smile-o">Congratulations!</h1>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://feedjit.com/js/slider.js"></script>
+	<script type="text/javascript" src="http://feedjit.com/js/colpick/js/colorpicker.js"></script>
+	<script type="text/javascript">
+	var FJModal = function(cfg){
+		this.cfg = cfg;
+		this.modElem = $('#' + this.cfg.outer)[0];
+		this.modInnerElem = $('#' + this.cfg.inner)[0];
+		$('#' + this.cfg.outer).css('opacity', 0.4);
+	};
+	FJModal.prototype.toggle = function(evt){
+		evt.preventDefault();
+		evt.stopImmediatePropagation();
+		if(this.modElem.style.display == 'none'){
+			this.modElem.style.display = 'block';
+			this.modInnerElem.style.display = 'block';
+			var self = this;
+			var handler = function(){ self.hide(); $('body').unbind('click', handler); };
+			$('body').bind('click', handler);
+		} else {
+			this.hide();
+		}
+		return false;
+	};
+	FJModal.prototype.hide = function(){
+		this.modElem.style.display = 'none';
+		this.modInnerElem.style.display = 'none';
+	};
+	var fj = {
+		colorSchemes: [
+			['Default', 'bc=FFFFFF&tc=000000&brd1=012B6B&lnk=135D9E&hc=FFFFFF&hfc=2853A8&btn=C99700'],
+			['Vampire', 'bc=000000&tc=F5F5F5&brd1=454545&lnk=C95050&hc=FFFFFF&hfc=5C5A5A&btn=8A0214'],
+			['Parchment', 'bc=DCE0C5&tc=303030&brd1=CED6A3&lnk=8A8A03&hc=BABD93&hfc=706B38&btn=4F4F4F'],
+			['Steel', 'bc=5C636B&tc=FFFFFF&brd1=336699&lnk=B5CDE6&hc=FFFFFF&hfc=464E52&btn=1E2224'],
+			['White Ice', 'bc=FFFFFF&tc=545454&brd1=CCCCCC&lnk=6AA5C4&hc=878787&hfc=FFFFFF&btn=62BBDE'],
+			['Forest', 'bc=005717&tc=FFFFFF&brd1=454545&lnk=F5FFAB&hc=FFFFFF&hfc=00781E&btn=BAAB00'],
+			['Green', 'bc=FAFCED&tc=575757&brd1=41B352&lnk=329441&hc=FFFFFF&hfc=09B800&btn=6B6B6B'],
+			['Sea Foam', 'bc=214540&tc=FFFFFF&brd1=336699&lnk=CDF3FC&hc=A2CFF2&hfc=18497A&btn=E0D5A8'],
+			['Pony Pastels', 'bc=FFFFFF&tc=575757&brd1=CDAFF0&lnk=659BD6&hc=611561&hfc=FCC7FA&btn=358EFA'],
+			['Grape', 'bc=610673&tc=FFFFFF&brd1=336699&lnk=F6FCCD&hc=91FF00&hfc=6A007A&btn=000000']
+			],
+		slider: false,
+		slider2: false,
+		storeTM: false,
+		loaded: false,
+		proid: '0',
+		encdom: '0',
+		currentURL: '',
+		advMap: {
+			hideLogo: 'hl',
+			hideLinks: 'hlnks',
+			hideFace: 'hfce',
+			showRefs: 'srefs',
+			hideBars: 'hbars'
+			},
+		widgetURLMap: {
+			traf: 'serve',
+			map: 'map',
+			col: 'coFilter',
+			pop: 'popPages'
+			},
+		RGB2HEX: function(rgb){
+			if(/^rgb\(/i.test(rgb)){
+				rgb = rgb.replace(/rgb\(/i, '');
+				rgb = rgb.replace(/\)/, '');
+				rgb = rgb.replace(/\s+/g, '');
+				var colors = rgb.split(',');
+				return this._rgb2hex(colors[0] / 255, colors[1] / 255, colors[2] / 255, true);
+			} else {
+				return rgb;
+			}
+		},
+		_rgb2hex: function(r, g, b, includeHash){
+			r = Math.round(r * 255);
+			g = Math.round(g * 255);
+			b = Math.round(b * 255);
+			if (includeHash == undefined)
+			{
+				includeHash = true;
+			}
+			r = r.toString(16);
+			if (r.length == 1)
+			{
+				r = '0' + r;
+			}
+			g = g.toString(16);
+			if (g.length == 1)
+			{
+				g = '0' + g;
+			}
+			b = b.toString(16);
+			if (b.length == 1)
+			{
+				b = '0' + b;
+			}
+			return ((includeHash ? '#' : '') + r + g + b).toUpperCase();
+		},
+		completeLoad: function(json){
+			var self = this;
+			$.each(['#bc_traf', '#tc_traf', '#brd1_traf', '#lnk_traf', '#hc_traf', '#hfc_traf', '#btn_traf'], function(idx, elem){ 
+				var elmo = elem;
+				$(elmo).ColorPicker({
+					color: self.RGB2HEX( $(elmo).css('backgroundColor') ),
+					livePreview: true,
+					onShow: function (colpkr) {
+						$(colpkr).fadeIn(500);
+						return false;
+						},
+					onHide: function (colpkr) {
+						self.update2Widget('traf');
+						self.uncheckColorSchemes();
+						self.updateForms('traf', self.makeQueryString('traf'));
+						$(colpkr).fadeOut(500);
+						return false;
+						},
+					onChange: function (hsb, hex, rgb) {
+						$(elmo).css('backgroundColor', '#' + hex);
+					},
+					onSubmit: function(hsb, hex, rgb, el){
+						self.update2Widget('traf');
+						self.uncheckColorSchemes();
+						self.updateForms('traf', self.makeQueryString('traf'));
+						}
+					});
+				});
+			this.loaded = true;
+		},
+		update2Widget: function(widgetKey){
+			var src = 'http://' + fjit.fjHost + '/style/1515/' + this.widgetURLMap[widgetKey] + '/?tft=2&rand=' + Math.floor(Math.random() * 99999999) + '&' + this.makeQueryString(widgetKey);
+			fjltf.injectWidgetCSS(src, function(){
+				fjltf.realignEventElements();
+			});
+		},
+		makeQueryString: function(widgetKey){
+			var self = this;
+			var qs = {};
+			var arr = ['bc', 'tc', 'brd1', 'lnk', 'hc', 'hfc', 'btn'];
+			for(var i = 0; i < arr.length; i++){
+				var k = arr[i];
+				qs[k] = this.RGB2HEX($('#' + k + '_' + widgetKey).css('backgroundColor')).replace('#', '');
+			}
+			qs['ww'] = $('#sliderWidthNum').val();
+			qs['wne'] = $('#sliderEntriesNum').val();
+
+			if($('#dot_' + widgetKey).length){
+				qs['dot'] = this.RGB2HEX($('#dot_' + widgetKey).css('backgroundColor')).replace('#', '');
+			}
+			if($('#wHead').length){
+				if($('#wHead').val().length > 0){
+					qs['wh'] = $('#wHead').val();
+				} else {
+					qs['wh'] = 'fjnone';
+				}
+			}
+			$.each(['hideLogo', 'hideLinks', 'hideFace', 'showRefs', 'hideBars'], function(idx, elem){
+				if($('#' + elem).length){
+					qs[self.advMap[elem]] = ($('#' + elem + ':checked').val() != null ? '1' : '0');
+				}
+			});
+			return $.param(qs);
+		},
+		deparam: function(qstr){
+			var arr = qstr.split('&');
+			var obj = {};
+			for(var i = 0; i < arr.length; i++){
+				var arr2 = arr[i].split('=');
+				obj[arr2[0]] = arr2[1];
+			}
+			return obj;
+		},
+		loadColorScheme: function(widgetKey, qstr){
+			var hs = this.deparam(qstr);
+			for(var k in hs){
+				if(! /^(?:ww|wh|hl|hlnks)$/.test(k)){ 
+					$('#' + k + '_' + widgetKey).css('backgroundColor', '#' + hs[k]);
+					$('#' + k + '_' + widgetKey).ColorPickerSetColor('#' + hs[k]);
+				}
+			}
+			if(hs.ww){
+				this.slider.setValue(hs.ww);
+			} else {
+				qstr += '&ww=' + $('#sliderWidthNum').val();
+			}
+			if(hs.went){
+				this.slider2.setValue(hs.went);
+			} else {
+				qstr += '&went=' + $('#sliderEntriesNum').val();
+				this.slider2.setValue($('#sliderEntriesNum').val());
+			}
+			var src = 'http://' + fjit.fjHost + '/style/1515/' + this.widgetURLMap[widgetKey] + '/?tft=2&rand=' + Math.floor(Math.random() * 99999999) + '&' + qstr;
+			fjltf.injectWidgetCSS(src, function(){
+				fjltf.updateWidgetWidth(hs.ww);
+				fjltf.realignEventElements();
+			});
+			this.updateForms(widgetKey, qstr);
+		},
+		updateForms: function(widgetKey, qstr){
+			qstr = qstr.replace(/\&/g, '&amp;');
+			var scr = 	
+				'<' + 
+				'script type="text/javascript" src="' +
+				'http://feedjit.com/' + 
+				this.widgetURLMap[widgetKey] + 
+				'/?vv=1515&amp;tft=3&amp;dd=' + this.encdom + '&amp;wid=&amp;pid=0&amp;proid=' + this.proid + '&amp;' + qstr + '">' + '<' + '/script>' +
+				'<' +
+				'noscript>' +
+				'<' +
+				'a href="http://feedjit.com/">Live Traffic Stats' +
+				'<' +
+				'/a>' + '<' + '/noscript>';
+			$('#bloggerTextarea1_' + widgetKey).val(scr);
+			$('#bloggerTextarea2_' + widgetKey).val(scr);
+			$('#wordpressTextarea_' + widgetKey).val(scr);
+			$('#typepadTextarea_' + widgetKey).val(scr);
+			$('#cutPasteTextarea1').val(scr);
+			$('#tony').val(qstr);
+		},
+		setUpSlider: function(){
+			var s = new Slider($("#slider")[0], $("#sliderInput")[0]);
+			s.setMaximum(300);
+			s.setMinimum(160);
+			s.setValue(300);
+			fjltf.updateWidgetWidth(300);
+			fjltf.realignEventElements();
+			$('#sliderWidthNum').value = '300';
+			var self = this;
+			s.onchange = function(){
+				var val = s.getValue();
+				$('#FJ_TF_Cont').css('width', (val + 20) + 'px');
+				$('#FJ_TListC').css('width', (val + 10) + 'px');
+				$('#FJ_TList').css('width', (val + 10) + 'px');
+				var dat = [
+					['#FJ_TListC', 0],
+					['#FJ_TListC div a', -10],
+					['#FJ_TListC #feedjiti-overlay3', 0],
+					['#FJ_TListC #feedjiti-overlay3 a', 0],
+					['#FJ_TListC #adContainer', -4],
+					['#FJ_TListC #fjEvents', -4],
+					['#FJ_TListC #noTopBarBorder', 0],
+					['#FJ_TListC div.traffic', -14],
+					['#FJ_TListC #feedjiti-viewDiv', 0],
+					['#FJ_TListC .feedjitc-footer', -10],
+					['#FJ_TListC .feedjitc-getit', -4],
+					['#FJ_TListC #feedjiti-overlay2', -4],
+					['#FJ_TListC .feedjitc-getit feedjiti-footerCENT', -4],
+				];
+				jQuery.each(dat, function(idx, elem){ 
+						jQuery(elem[0]).css('width', (val + elem[1]) + 'px');
+					});
+				fjltf.updateWidgetWidth(val);
+				fjltf.realignEventElements();
+				$('#sliderWidthNum').val(val); 
+				self.updateForms('traf', self.makeQueryString('traf')); 
+			};
+			this.slider = s;
+		},
+		setUpSlider2: function(){
+			var s = new Slider($("#slider2")[0], $("#sliderInput2")[0]);
+			s.setMaximum(10);
+			s.setMinimum(1);
+			s.setValue(10);
+			$('#sliderEntriesNum').value = '10';
+			var self = this;
+			s.onchange = function(){ 
+				var val = s.getValue();
+				var counter = 0;
+				jQuery('#FJ_TListC .traffic').each(function(idx, elem){
+					counter++;
+					if(counter <= val){
+						jQuery(elem).css('display', ''); 
+					} else {
+						jQuery(elem).css('display', 'none'); 
+					}
+				});
+				fjltf.relockEventContainer();
+				
+				$('#sliderEntriesNum').val(val); 
+				self.updateForms('traf', self.makeQueryString('traf')); 
+			};
+			this.slider2 = s;
+		},
+		SHOWN: false,
+		showDiv: function(divID, nofx){
+			this.logEvent('homeActions', 'showDiv-' + divID);
+			if(divID == this.SHOWN){ return; }
+			this.SHOWN = divID;
+			$('#signupDiv, #emailConfirmDiv, #noMoreSignups, #customizeDiv, #getOther, #getInstagram, #getWordpress, #getTypepad, #getBlogger, #loadingCodeMsg').each(function(idx, elem){ $(elem).stop(true); $(elem).hide(); } ); 
+			if(nofx){
+				$('#' + divID).show();
+			} else {
+				$('#' + divID).show();
+			}
+		},
+		colorModal: false,
+		blogModal: false,
+		doOnReady: function(){
+			var self = this;
+			$('#colorModalLink').click(function(evt){ self.colorModal.toggle(evt); });
+			$('#blogSelector').click(function(evt){ self.blogModal.toggle(evt); });
+			$('#blogModalInner, #colorModalInner').click(function(evt){ evt.stopImmediatePropagation(); });
+
+			this.setUpSlider();
+			this.setUpSlider2();
+			this.updateForms('traf', this.makeQueryString('traf'));
+			this.completeLoad();
+			var i = 0;
+			$('#colorModalInner .modBox').each(function(idx, elem){
+				$('.schemeName', elem).html(self.colorSchemes[i][0]);
+				$('input:radio', elem).each(function(idx, rad){
+					$(rad).val(i);
+					var j = i;
+					$(rad).click(function(){
+						self.logEvent('homeActions', 'colSchemeSel');
+						self.loadColorScheme('traf', self.colorSchemes[$(this).val()][1]);
+						});
+					});
+				var data = self.deparam(self.colorSchemes[i][1]);
+				var elems = [];
+				$('.mSwatch', elem).each(function(idx2, elem2){ elems.push(elem2); });
+				for(var k in data){
+					var el3 = elems.shift();
+					$(el3).css('backgroundColor', '#' + data[k]);
+				}
+				i++;
+			});
+			this.loadColorScheme('traf', this.colorSchemes[0][1]);
+			$("#colorModalInner input:radio[value='0']").attr('checked', true);
+			this.colorModal = new FJModal({
+				outer: 'colorModal', 
+				inner: 'colorModalInner'
+				});
+			this.blogModal = new FJModal({
+				outer: 'blogModal',
+				inner: 'blogModalInner'
+				});
+			var el = $("#blogModalBody div:first").clone()[0];
+			$('input', el).remove();
+			$('#blogSelector').html(el.innerHTML);
+			$('#blogModalBody div:first input').attr('checked', true);
+			$('#blogModalBody input:radio').click(function(evt){
+				var el2 = $(this.parentNode).clone()[0];
+				$('input', el2).remove();
+				$('#blogSelector').html(el2.innerHTML);
+				$(this).attr('checked', true);
+				self.blogModal.hide(); 
+				});
+		},
+		uncheckColorSchemes: function(){
+			$('#colorModalInner input:radio').attr('checked', false);
+		},
+		trackExitClick: function(link, category, action){
+			try {
+				_gaq.push(['_trackEvent', category , action]);
+			} catch(e){}
+			setTimeout(function(){
+				document.location.href = link.href;
+			}, 100);
+		},
+		logEvent: function(category, action){
+			try {
+				_gaq.push(['_trackEvent', category , action]);
+			} catch(e){}
+		}
+	};
+	$(function() {
+		fj.doOnReady(); 
+	});
+	</script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+    	var countries = [{"code":"usa", "name":"United States"},
+    		{"code":"uk", "name":"United Kingdom"},
+    		{"code":"bm", "name":"Bermuda"},
+    		{"code":"swedish", "name":"Sweden"},
+    		{"code":"ag", "name":"Antigua and Barbuda"},
+    		{"code":"ac", "name":"Ascension Island"},
+    		{"code":"ad", "name":"Andorra"},
+    		{"code":"ae", "name":"United Arab Emirates"},
+    		{"code":"af", "name":"Afghanistan"},
+    		{"code":"ai", "name":"Anguilla"},
+    		{"code":"al", "name":"Albania"},
+    		{"code":"ax", "name":"Åland Islands"},
+    		{"code":"dz", "name":"Algeria"},
+    		{"code":"as", "name":"American Samoa"},
+    		{"code":"ao", "name":"Angola"},
+    		{"code":"aq", "name":"Antarctica"},
+    		{"code":"ar", "name":"Argentina"},
+    		{"code":"am", "name":"Armenia"},
+    		{"code":"aw", "name":"Aruba"},
+    		{"code":"az", "name":"Azerbaijan"},
+    		{"code":"bs", "name":"Bahamas"},
+    		{"code":"bh", "name":"Bahrain"},
+    		{"code":"bd", "name":"Bangladesh"},
+    		{"code":"bb", "name":"Barbados"},
+    		{"code":"by", "name":"Belarus"},
+    		{"code":"be", "name":"Belgium"},
+    		{"code":"bz", "name":"Belize"},
+    		{"code":"bj", "name":"Benin"},
+    		{"code":"bt", "name":"Bhutan"},
+    		{"code":"bo", "name":"Bolivia"},
+    		{"code":"ba", "name":"Bosnia and Herzegovina"},
+    		{"code":"bw", "name":"Botswana"},
+    		{"code":"bv", "name":"Bouvet Island"},
+    		{"code":"vg", "name":"British Virgin Islands"},
+    		{"code":"io", "name":"British Indian Ocean Territory"},
+    		{"code":"bn", "name":"Brunei Darussalam"},
+    		{"code":"bf", "name":"Burkina Faso"},
+    		{"code":"bi", "name":"Burundi"},
+    		{"code":"kh", "name":"Cambodia"},
+    		{"code":"cm", "name":"Cameroon"},
+    		{"code":"cv", "name":"Cape Verde"},
+    		{"code":"ky", "name":"Cayman Islands"},
+    		{"code":"cf", "name":"Central African Republic"},
+    		{"code":"td", "name":"Chad"},
+    		{"code":"cl", "name":"Chile"},
+    		{"code":"china", "name":"China"},
+    		{"code":"mo", "name":"Macao"},
+    		{"code":"cx", "name":"Christmas Island"},
+    		{"code":"cc", "name":"Cocos (Keeling) Islands"},
+    		{"code":"co", "name":"Colombia"},
+    		{"code":"km", "name":"Comoros"},
+    		{"code":"cg", "name":"Congo"},
+    		{"code":"cd", "name":"The Democratic Republic of the Congo"},
+    		{"code":"ck", "name":"Cook Islands"},
+    		{"code":"cr", "name":"Costa Rica"},
+    		{"code":"ci", "name":"Côte d'Ivoire"},
+    		{"code":"cu", "name":"Cuba"},
+    		{"code":"cy", "name":"Cyprus"},
+    		{"code":"czech", "name":"Czechia"},
+    		{"code":"dj", "name":"Djibouti"},
+    		{"code":"dm", "name":"Dominica"},
+    		{"code":"do", "name":"Dominican Republic"},
+    		{"code":"ec", "name":"Ecuador"},
+    		{"code":"eg", "name":"Egypt"},
+    		{"code":"sv", "name":"El Salvador"},
+    		{"code":"gq", "name":"Equatorial Guinea"},
+    		{"code":"er", "name":"Eritrea"},
+    		{"code":"ee", "name":"Estonia"},
+    		{"code":"et", "name":"Ethiopia"},
+    		{"code":"fk", "name":"Falkland Islands (Malvinas)"},
+    		{"code":"fo", "name":"Faroe Islands"},
+    		{"code":"fj", "name":"Fiji"},
+    		{"code":"finnish", "name":"Finland"},
+    		{"code":"french", "name":"France"},
+    		{"code":"canadian", "name":"Canada"},
+    		{"code":"australian", "name":"Australia"},
+    		{"code":"gf", "name":"French Guiana"},
+    		{"code":"pf", "name":"French Polynesia"},
+    		{"code":"tf", "name":"French Southern Territories"},
+    		{"code":"ga", "name":"Gabon"},
+    		{"code":"gm", "name":"Gambia"},
+    		{"code":"ge", "name":"Georgia"},
+    		{"code":"german", "name":"Germany"},
+    		{"code":"gh", "name":"Ghana"},
+    		{"code":"gi", "name":"Gibraltar"},
+    		{"code":"greek", "name":"Greece"},
+    		{"code":"gl", "name":"Greenland"},
+    		{"code":"gd", "name":"Grenada"},
+    		{"code":"gp", "name":"Guadeloupe"},
+    		{"code":"gu", "name":"Guam"},
+    		{"code":"gt", "name":"Guatemala"},
+    		{"code":"gg", "name":"Guernsey"},
+    		{"code":"gn", "name":"Guinea"},
+    		{"code":"gw", "name":"Guinea-Bissau"},
+    		{"code":"gy", "name":"Guyana"},
+    		{"code":"ht", "name":"Haiti"},
+    		{"code":"hm", "name":"Heard Island and McDonald Islands"},
+    		{"code":"va", "name":"Holy See (Vatican City State)"},
+    		{"code":"hn", "name":"Honduras"},
+    		{"code":"hungarian", "name":"Hungary"},
+    		{"code":"is", "name":"Iceland"},
+    		{"code":"indian", "name":"India"},
+    		{"code":"indonesian", "name":"Indonesia"},
+    		{"code":"ir", "name":"Islamic Republic of Iran"},
+    		{"code":"iq", "name":"Iraq"},
+    		{"code":"irish", "name":"Ireland"},
+    		{"code":"im", "name":"Isle of Man"},
+    		// {"code":"il", "name":"Israel"},
+    		{"code":"italian", "name":"Italy"},
+    		{"code":"jm", "name":"Jamaica"},
+    		{"code":"japanese", "name":"Japan"},
+    		{"code":"je", "name":"Jersey"},
+    		{"code":"jo", "name":"Jordan"},
+    		{"code":"kz", "name":"Kazakhstan"},
+    		{"code":"ke", "name":"Kenya"},
+    		{"code":"ki", "name":"Kiribati"},
+    		{"code":"kp", "name":"Democratic People's Republic of Korea"},
+    		// {"code":"kr", "name":"Korea (South)"},
+    		{"code":"kw", "name":"Kuwait"},
+    		{"code":"kg", "name":"Kyrgyzstan"},
+    		{"code":"la", "name":"Lao People's Democratic Republic"},
+    		{"code":"latvian", "name":"Latvia"},
+    		{"code":"lb", "name":"Lebanon"},
+    		{"code":"ls", "name":"Lesotho"},
+    		{"code":"lr", "name":"Liberia"},
+    		{"code":"ly", "name":"Libya"},
+    		{"code":"li", "name":"Liechtenstein"},
+    		{"code":"lithuanian", "name":"Lithuania"},
+    		{"code":"lu", "name":"Luxembourg"},
+    		{"code":"mk", "name":"The Former Yugoslav Republic of Macedonia"},
+    		{"code":"mg", "name":"Madagascar"},
+    		{"code":"mw", "name":"Malawi"},
+    		{"code":"malaysia", "name":"Malaysia"},
+    		{"code":"mv", "name":"Maldives"},
+    		{"code":"ml", "name":"Mali"},
+    		{"code":"mt", "name":"Malta"},
+    		{"code":"mh", "name":"Marshall Islands"},
+    		{"code":"mq", "name":"Martinique"},
+    		{"code":"mr", "name":"Mauritania"},
+    		{"code":"mu", "name":"Mauritius"},
+    		{"code":"yt", "name":"Mayotte"},
+    		{"code":"mexican", "name":"Mexico"},
+    		{"code":"fm", "name":"Federated States of Micronesia"},
+    		{"code":"md", "name":"Moldova"},
+    		{"code":"mc", "name":"Monaco"},
+    		{"code":"mn", "name":"Mongolia"},
+    		{"code":"me", "name":"Montenegro"},
+    		{"code":"ms", "name":"Montserrat"},
+    		{"code":"ma", "name":"Morocco"},
+    		{"code":"mz", "name":"Mozambique"},
+    		{"code":"mm", "name":"Myanmar"},
+    		{"code":"na", "name":"Namibia"},
+    		{"code":"nr", "name":"Nauru"},
+    		{"code":"np", "name":"Nepal"},
+    		{"code":"dutch", "name":"Netherlands"},
+    		// {"code":"an", "name":"Netherlands Antilles"},
+    		{"code":"nc", "name":"New Caledonia"},
+    		// {"code":"nz", "name":"New Zealand"},
+    		{"code":"ni", "name":"Nicaragua"},
+    		{"code":"ne", "name":"Niger"},
+    		{"code":"ng", "name":"Nigeria"},
+    		{"code":"nu", "name":"Niue"},
+    		{"code":"nf", "name":"Norfolk Island"},
+    		{"code":"mp", "name":"Northern Mariana Islands"},
+    		{"code":"norwegian", "name":"Norway"},
+    		{"code":"om", "name":"Oman"},
+    		{"code":"pk", "name":"Pakistan"},
+    		{"code":"pw", "name":"Palau"},
+    		{"code":"ps", "name":"Occupied Palestinian Territory"},
+    		{"code":"pa", "name":"Panama"},
+    		{"code":"pg", "name":"Papua New Guinea"},
+    		{"code":"py", "name":"Paraguay"},
+    		{"code":"pe", "name":"Peru"},
+    		{"code":"philippines", "name":"Philippines"},
+    		{"code":"pn", "name":"Pitcairn"},
+    		{"code":"polish", "name":"Poland"},
+    		{"code":"portuguese", "name":"Portugal"},
+    		{"code":"pr", "name":"Puerto Rico"},
+    		{"code":"qa", "name":"Qatar"},
+    		{"code":"re", "name":"Réunion"},
+    		{"code":"romanian", "name":"Romania"},
+    		{"code":"russian", "name":"Russian Federation"},
+    		{"code":"rw", "name":"Rwanda"},
+    		{"code":"bl", "name":"Saint Barthélemy"},
+    		{"code":"sh", "name":"Saint Helena, Ascension and Tristan da Cunha"},
+    		{"code":"kn", "name":"Saint Kitts and Nevis"},
+    		{"code":"lc", "name":"Saint Lucia"},
+    		{"code":"mf", "name":"Saint Martin (French part)"},
+    		{"code":"pm", "name":"Saint Pierre and Miquelon"},
+    		{"code":"vc", "name":"Saint Vincent and the Grenadines"},
+    		{"code":"ws", "name":"Samoa"},
+    		{"code":"sm", "name":"San Marino"},
+    		{"code":"st", "name":"Sao Tome and Principe"},
+    		{"code":"sa", "name":"South Africa"},
+    		{"code":"sn", "name":"Senegal"},
+    		{"code":"rs", "name":"Serbia"},
+    		{"code":"sc", "name":"Seychelles"},
+    		{"code":"sl", "name":"Sierra Leone"},
+    		{"code":"singapore", "name":"Singapore"},
+    		{"code":"slovak", "name":"Slovakia"},
+    		{"code":"slovenian", "name":"Slovenia"},
+    		{"code":"sb", "name":"Solomon Islands"},
+    		{"code":"so", "name":"Somalia"},
+    		// {"code":"za", "name":"South Africa"},
+    		{"code":"gs", "name":"South Georgia and the South Sandwich Islands"},
+    		{"code":"ss", "name":"South Sudan"},
+    		{"code":"spain", "name":"Spain"},
+    		{"code":"lk", "name":"Sri Lanka"},
+    		{"code":"sd", "name":"Sudan"},
+    		{"code":"sr", "name":"Suriname"},
+    		{"code":"sj", "name":"Svalbard and Jan Mayen"},
+    		{"code":"sz", "name":"Swaziland"},
+    		{"code":"swedish", "name":"Sweden"},
+    		{"code":"ch", "name":"Switzerland"},
+    		{"code":"sy", "name":"Syrian Arab Republic"},
+    		{"code":"taiwan", "name":"Taiwan"},
+    		{"code":"tj", "name":"Tajikistan"},
+    		{"code":"tz", "name":"United Republic of Tanzania"},
+    		{"code":"th", "name":"Thailand"},
+    		{"code":"tl", "name":"Timor-Leste"},
+    		{"code":"tg", "name":"Togo"},
+    		{"code":"tk", "name":"Tokelau"},
+    		{"code":"to", "name":"Tonga"},
+    		{"code":"tt", "name":"Trinidad and Tobago"},
+    		{"code":"tn", "name":"Tunisia"},
+    		{"code":"turkish", "name":"Turkey"},
+    		{"code":"tm", "name":"Turkmenistan"},
+    		{"code":"tc", "name":"Turks and Caicos Islands"},
+    		{"code":"tv", "name":"Tuvalu"},
+    		{"code":"ug", "name":"Uganda"},
+    		{"code":"ukrainian", "name":"Ukraine"},
+    		{"code":"um", "name":"United States Minor Outlying Islands"},
+    		{"code":"uy", "name":"Uruguay"},
+    		{"code":"uz", "name":"Uzbekistan"},
+    		{"code":"vu", "name":"Vanuatu"},
+    		{"code":"ve", "name":"Venezuela"},
+    		{"code":"vietnamese", "name":"Vietnam"},
+    		{"code":"vi", "name":"U.S. Virgin Islands"},
+    		{"code":"wf", "name":"Wallis and Futuna"},
+    		{"code":"eh", "name":"Western Sahara"},
+    		{"code":"ye", "name":"Yemen"},
+    		{"code":"zm", "name":"Zambia"},
+    		{"code":"zw", "name":"Zimbabwe"},
+    		];
+
+    	var funDays = [{"date":"01-01", "name":"Polar Bear Plunge Day"},
+    		{"date":"01-02", "name":"Buffet Day, Run It up the Flagpole and See If Anyone Salutes It Day, Science Fiction Day"},
+    		{"date":"01-03", "name":"Fruitcake Toss Day, Festival of Sleep Day"},
+    		{"date":"01-04", "name":"Trivia Day"},
+    		{"date":"01-05", "name":"Bird Day"},
+    		{"date":"01-06", "name":"Bean Day"},
+    		{"date":"01-07", "name":"Old Rock Day"},
+    		{"date":"01-08", "name":"Earth's Rotation Day"},
+    		{"date":"01-09", "name":"Static Electricity Day, Word Nerd Day, Clean Off Your Desk Day"},
+    		{"date":"01-10", "name":"Cut Your Energy Costs Day"},
+    		{"date":"01-11", "name":"Learn Your Name in Morse Code Day"},
+    		{"date":"01-12", "name":"Marzipan Day"},
+    		{"date":"01-13", "name":"Make Your Dreams Come True Day"},
+    		{"date":"01-14", "name":"Organize Your Home Day"},
+    		{"date":"01-15", "name":"Strawberry Ice Cream Day"},
+    		{"date":"01-16", "name":"Nothing Day"},
+    		{"date":"01-17", "name":"Benjamin Franklin Day, Kid Inventors' Day, Ditch New Year's Resolution Day"},
+    		{"date":"01-18", "name":"Thesaurus Day"},
+    		{"date":"01-19", "name":"Tin Can Day, Popcorn Day"},
+    		{"date":"01-20", "name":"Penguin Awareness Day"},
+    		{"date":"01-21", "name":"Soup Swap Day, Squirrel Appreciation Day"},
+    		{"date":"01-22", "name":"Hot Sauce Day"},
+    		{"date":"01-23", "name":"Handwriting Day"},
+    		{"date":"01-24", "name":"Compliment Day, Macintosh Computer Day"},
+    		{"date":"01-25", "name":"Opposite Day"},
+    		{"date":"01-26", "name":"Spouse's Day"},
+    		{"date":"01-27", "name":"Chocolate Cake Day, e-Day"},
+    		{"date":"01-28", "name":"Data Privacy Day"},
+    		{"date":"01-29", "name":"Puzzle Day"},
+    		{"date":"01-30", "name":"Croissant Day"},
+    		{"date":"01-31", "name":"Backwards Day"},
+    		{"date":"02-01", "name":"Work Naked Day"},
+    		{"date":"02-02", "name":"Day of the Crêpe, Play Your Ukulele Day"},
+    		{"date":"02-03", "name":"Carrot Cake Day"},
+    		{"date":"02-04", "name":"Eat Ice Cream for Breakfast Day, Thank Your Mailman Day, Create a Vacuum Day, Stuffed Mushroom Day"},
+    		{"date":"02-05", "name":"National Weatherperson's Day, Chocolate Fondue Day"},
+    		{"date":"02-06", "name":"Lame Duck Day"},
+    		{"date":"02-07", "name":"e-Day, Send a Card to a Friend Day"},
+    		{"date":"02-08", "name":"Laugh and Get Rich Day"},
+    		{"date":"02-09", "name":"Toothache Day, Bagel and Lox Day"},
+    		{"date":"02-10", "name":"Umbrella Day"},
+    		{"date":"02-11", "name":"Make a Friend Day, Don't Cry Over Spilled Milk Day"},
+    		{"date":"02-12", "name":"Darwin Day"},
+    		{"date":"02-13", "name":"Clean Out Your Computer Day, World Radio Day"},
+    		{"date":"02-14", "name":"Ferris Wheel Day, Library Lovers Day"},
+    		{"date":"02-15", "name":"Gumdrop Day"},
+    		{"date":"02-16", "name":"Do a Grouch a Favor Day"},
+    		{"date":"02-17", "name":"Random Act of Kindness Day"},
+    		{"date":"02-18", "name":"Battery Day"},
+    		{"date":"02-19", "name":"Chocolate Mint Day"},
+    		{"date":"02-22", "name":"Single Tasking Day, Be Humble Day"},
+    		{"date":"02-23", "name":"International Dog Biscuit Appreciation Day"},
+    		{"date":"02-24", "name":"Tortilla Chip Day"},
+    		{"date":"02-25", "name":"World Sword Swallowers Day"},
+    		{"date":"02-26", "name":"Pistachio Day, Tell a Fairy Tale Day"},
+    		{"date":"02-27", "name":"No Brainer Day"},
+    		{"date":"02-28", "name":"Public Sleeping Day"},
+    		{"date":"03-01", "name":"World Compliment Day, Plan a Solo Vacation Day"},
+    		{"date":"03-02", "name":"Old Stuff Day"},
+    		{"date":"03-03", "name":"I Want You to be Happy Day"},
+    		{"date":"03-04", "name":"March Forth and Do Something Day"},
+    		{"date":"03-05", "name":"Learn What Your Name Means Day, Cinco de Marcho"},
+    		{"date":"03-06", "name":"Dentist’s Day"},
+    		{"date":"03-07", "name":"Alexander Graham Bell Day"},
+    		{"date":"03-08", "name":"Proofreading Day"},
+    		{"date":"03-10", "name":"Mario Day"},
+    		{"date":"03-11", "name":"Oatmeal Nut Waffle Day"},
+    		{"date":"03-12", "name":"Alfred Hitchcock Day"},
+    		{"date":"03-13", "name":"Napping Day, Jewel Day"},
+    		{"date":"03-14", "name":"Pi Day"},
+    		{"date":"03-15", "name":"Everything You Think is Wrong Day"},
+    		{"date":"03-16", "name":"Absolutely Incredible Kid Day, Every Thing You Do is Right Day"},
+    		{"date":"03-17", "name":"Submarine Day"},
+    		{"date":"03-18", "name":"Awkward Moments Day"},
+    		{"date":"03-19", "name":"Let's Laugh Day"},
+    		{"date":"03-20", "name":"World Storytelling Day, Proposal Day"},
+    		{"date":"03-21", "name":"Common Courtesy Day"},
+    		{"date":"03-22", "name":"International Goof Off Day"},
+    		{"date":"03-23", "name":"OK Day, Puppy Day, Near Miss Day"},
+    		{"date":"03-24", "name":"Chocolate Covered Raisins Day"},
+    		{"date":"03-25", "name":"Waffle Day, Tolkien Reading Day"},
+    		{"date":"03-26", "name":"Make Up Your Own Holiday Day"},
+    		{"date":"03-27", "name":"Spanish Paella Day"},
+    		{"date":"03-28", "name":"Something on a Stick Day"},
+    		{"date":"03-29", "name":"Smoke and Mirrors Day"},
+    		{"date":"03-30", "name":"Take a Walk in the Park Day"},
+    		{"date":"03-31", "name":"Bunsen Burner Day"},
+    		{"date":"04-01", "name":"Fun at Work Day"},
+    		{"date":"04-03", "name":"World Party Day"},
+    		{"date":"04-04", "name":"Tell a Lie Day"},
+    		{"date":"04-05", "name":"Read a Road Map Day, First Contact Day"},
+    		{"date":"04-06", "name":"Sorry Charlie Day"},
+    		{"date":"04-07", "name":"Walk to Work Day"},
+    		{"date":"04-10", "name":"Siblings Day"},
+    		{"date":"04-11", "name":"Be Kind to Lawyers Day, Barbershop Quartet Day"},
+    		{"date":"04-12", "name":"Grilled Cheese Day, Yuri's Night"},
+    		{"date":"04-13", "name":"Scrabble Day"},
+    		{"date":"04-14", "name":"International Moment of Laughter Day, Reach as High as You Can Day, Look up the Sky Day"},
+    		{"date":"04-16", "name":"Eggs Benedict Day, Wear Pajamas to Work Day"},
+    		{"date":"04-17", "name":"Haiku Poetry Day"},
+    		{"date":"04-18", "name":"Columnist Day"},
+    		{"date":"04-20", "name":"Look Alike Day"},
+    		{"date":"04-22", "name":"Record Store Day, Jelly Bean Day"},
+    		{"date":"04-23", "name":"Take a Chance Day, Impossible Astronaut Day, Lover's Day"},
+    		{"date":"04-24", "name":"Poem in Your Pocket Day"},
+    		{"date":"04-25", "name":"DNA Day"},
+    		{"date":"04-26", "name":"Pretzel Day, Richter Scale Day"},
+    		{"date":"04-27", "name":"Take Our Daughters and Sons to Work Day, World Pinhole Photography Day"},
+    		{"date":"04-29", "name":"Astronomy Day, Zipper Day"},
+    		{"date":"04-30", "name":"Honesty Day"},
+    		{"date":"05-01", "name":"Batman Day"},
+    		{"date":"05-04", "name":"Star Wars Day"},
+    		{"date":"05-05", "name":"No Pants Day, Space Day"},
+    		{"date":"05-06", "name":"Herb Day, Free Comic Book Day, Beverage Day"},
+    		{"date":"05-09", "name":"Europe Day, Lost Sock Memorial Day"},
+    		{"date":"05-10", "name":"National School Nurse Day, Clean Up Your Room Day"},
+    		{"date":"05-11", "name":"Twilight Zone Day, Eat What You Want Day"},
+    		{"date":"05-12", "name":"Limerick Day"},
+    		{"date":"05-13", "name":"Frog Jumping Day"},
+    		{"date":"05-14", "name":"Dance Like a Chicken Day"},
+    		{"date":"05-15", "name":"Chocolate Chip Day"},
+    		{"date":"05-17", "name":"Pack Rat Day"},
+    		{"date":"05-18", "name":"No Dirty Dishes Day"},
+    		{"date":"05-19", "name":"Pizza Party Day, May Ray Day"},
+    		{"date":"05-20", "name":"Be a Millionaire Day"},
+    		{"date":"05-21", "name":"Talk Like Yoda Day"},
+    		{"date":"05-22", "name":"Buy a Musical Instrument Day"},
+    		{"date":"05-24", "name":"Scavenger Hunt Day"},
+    		{"date":"05-25", "name":"Sing Out Day, Towel Day"},
+    		{"date":"05-26", "name":"World Lindy Hop Day"},
+    		{"date":"05-27", "name":"Sun Screen Day"},
+    		{"date":"05-28", "name":"Hamburger Day"},
+    		{"date":"05-29", "name":"Put a Pillow on Your Fridge Day"},
+    		{"date":"05-30", "name":"My Bucket's Got a Hole Day"},
+    		{"date":"05-31", "name":"Macaroon Day"},
+    		{"date":"06-01", "name":"Say Something Nice Day"},
+    		{"date":"06-02", "name":"Leave the Office Early Day, National Doughnut Day"},
+    		{"date":"06-03", "name":"Repeat Day"},
+    		{"date":"06-04", "name":"Hug Your Cat Day"},
+    		{"date":"06-06", "name":"Drive-In Movie Day"},
+    		{"date":"06-07", "name":"VCR Day"},
+    		{"date":"06-08", "name":"Best Friends Day"},
+    		{"date":"06-09", "name":"Donald Duck Day"},
+    		{"date":"06-10", "name":"Iced Tea Day"},
+    		{"date":"06-11", "name":"Corn on the Cob Day"},
+    		{"date":"06-12", "name":"Red Rose Day"},
+    		{"date":"06-13", "name":"Sewing Machine Day"},
+    		{"date":"06-14", "name":"Bourbon Day"},
+    		{"date":"06-15", "name":"Nature Photography Day"},
+    		{"date":"06-16", "name":"Bloomsday"},
+    		{"date":"06-17", "name":"World Juggling Day, Eat Your Vegetables Day"},
+    		{"date":"06-18", "name":"International Picnic Day, International Panic Day"},
+    		{"date":"06-19", "name":"Sauntering Day"},
+    		{"date":"06-21", "name":"Daylight Appreciation Day"},
+    		{"date":"06-22", "name":"Onion Ring Day"},
+    		{"date":"06-23", "name":"Take Your Dog to Work Day, Typewriter Day"},
+    		{"date":"06-24", "name":"Swim a Lap Day"},
+    		{"date":"06-25", "name":"Please Take my Children to Work Day"},
+    		{"date":"06-26", "name":"Chocolate Pudding Day"},
+    		{"date":"06-27", "name":"Helen Keller Day"},
+    		{"date":"06-28", "name":"Tau Day"},
+    		{"date":"06-29", "name":"Camera Day"},
+    		{"date":"06-30", "name":"Meteor Watch Day"},
+    		{"date":"07-01", "name":"International Joke Day"},
+    		{"date":"07-02", "name":"I Forgot Day, World UFO Day"},
+    		{"date":"07-03", "name":"Compliment Your Mirror Day, International Plastic Bag Free Day"},
+    		{"date":"07-04", "name":"Sidewalk Egg Frying Day"},
+    		{"date":"07-05", "name":"Workaholics Day"},
+    		{"date":"07-06", "name":"World Kissing Day"},
+    		{"date":"07-07", "name":"Tell the Truth Day"},
+    		{"date":"07-08", "name":"Video Games Day, Math 2.0 Day"},
+    		{"date":"07-09", "name":"Sugar Cookie Day"},
+    		{"date":"07-10", "name":"Teddy Bears' Picnic Day, Clerihew Day"},
+    		{"date":"07-11", "name":"Cheer Up the Lonely Day"},
+    		{"date":"07-12", "name":"Simplicity Day"},
+    		{"date":"07-13", "name":"Embrace Your Geekness Day"},
+    		{"date":"07-14", "name":"Pandemonium Day"},
+    		{"date":"07-15", "name":"Gummi Worm Day"},
+    		{"date":"07-16", "name":"Corn Fritters Day"},
+    		{"date":"07-17", "name":"Yellow Pig Day"},
+    		{"date":"07-18", "name":"Caviar Day"},
+    		{"date":"07-19", "name":"Stick Out Your Tongue Day"},
+    		{"date":"07-20", "name":"Space Exploration Day"},
+    		{"date":"07-21", "name":"Junk Food Day"},
+    		{"date":"07-22", "name":"Pi Approximation Day"},
+    		{"date":"07-23", "name":"Ice Cream Day, Vanilla Ice Cream Day"},
+    		{"date":"07-24", "name":"Cousins Day"},
+    		{"date":"07-25", "name":"Culinarians Day"},
+    		{"date":"07-26", "name":"Uncle and Aunt Day"},
+    		{"date":"07-27", "name":"Take your Pants for a Walk Day"},
+    		{"date":"07-28", "name":"Milk Chocolate Day"},
+    		{"date":"07-29", "name":"Lasagna Day"},
+    		{"date":"07-30", "name":"National Cheesecake Day"},
+    		{"date":"07-31", "name":"Uncommon Musical Instrument Day"},
+    		{"date":"08-01", "name":"Girlfriend's Day"},
+    		{"date":"08-02", "name":"Ice Cream Sandwich Day"},
+    		{"date":"08-03", "name":"Watermelon Day"},
+    		{"date":"08-04", "name":"Single Working Women's Day, International Beer Day"},
+    		{"date":"08-05", "name":"Work Like a Dog Day"},
+    		{"date":"08-06", "name":"Sisters' Day, Fresh Breath Day"},
+    		{"date":"08-07", "name":"Lighthouse Day"},
+    		{"date":"08-08", "name":"Happiness Happens Day"},
+    		{"date":"08-09", "name":"Book Lovers Day"},
+    		{"date":"08-10", "name":"Lazy Day"},
+    		{"date":"08-11", "name":"Son and Daughter Day"},
+    		{"date":"08-12", "name":"Middle Child Day"},
+    		{"date":"08-13", "name":"Left-Handers Day"},
+    		{"date":"08-14", "name":"Creamsicle Day"},
+    		{"date":"08-15", "name":"Pythagorean Theorem Day, Relaxation Day"},
+    		{"date":"08-16", "name":"Tell a Joke Day"},
+    		{"date":"08-17", "name":"Thrift Shop Day"},
+    		{"date":"08-18", "name":"Mail Order Catalog Day"},
+    		{"date":"08-19", "name":"World Photo Day"},
+    		{"date":"08-20", "name":"Chocolate Pecan Pie Day"},
+    		{"date":"08-21", "name":"Spumoni Day"},
+    		{"date":"08-22", "name":"Be An Angel Day"},
+    		{"date":"08-23", "name":"Ride Like the Wind Day"},
+    		{"date":"08-24", "name":"Pluto Demoted Day"},
+    		{"date":"08-25", "name":"Kiss and Make up Day"},
+    		{"date":"08-26", "name":"Dog Appreciation Day"},
+    		{"date":"08-27", "name":"The Duchess Who Wasn't Day"},
+    		{"date":"08-28", "name":"Bow Tie Day"},
+    		{"date":"08-29", "name":"According to Hoyle Day"},
+    		{"date":"08-30", "name":"Frankenstein Day"},
+    		{"date":"08-31", "name":"Eat Outside Day"},
+    		{"date":"09-01", "name":"Emma Nutt Day, No Rhyme or Reason Day"},
+    		{"date":"09-02", "name":"Bison Ten Yell Day"},
+    		{"date":"09-03", "name":"Skyscraper Day"},
+    		{"date":"09-04", "name":"Eat an Extra Dessert Day"},
+    		{"date":"09-05", "name":"Be Late for Something Day, Cheese Pizza Day"},
+    		{"date":"09-06", "name":"Fight Procrastination Day, Read a Book Day"},
+    		{"date":"09-07", "name":"Salami Day"},
+    		{"date":"09-08", "name":"Pardon Day"},
+    		{"date":"09-09", "name":"Teddy Bear Day"},
+    		{"date":"09-10", "name":"Swap Ideas Day"},
+    		{"date":"09-11", "name":"Make Your Bed Day"},
+    		{"date":"09-12", "name":"Chocolate Milkshake Day"},
+    		{"date":"09-13", "name":"Positive Thinking Day, Roald Dahl Day"},
+    		{"date":"09-14", "name":"Hug Your Hound Day"},
+    		{"date":"09-15", "name":"Make a Hat Day"},
+    		{"date":"09-16", "name":"Collect Rocks Day, Guacamole Day"},
+    		{"date":"09-17", "name":"International Country Music Day"},
+    		{"date":"09-18", "name":"Rice Krispie Treat Day"},
+    		{"date":"09-19", "name":"National Gymnastics Day, International Talk Like a Pirate Day"},
+    		{"date":"09-20", "name":"Punch Day"},
+    		{"date":"09-21", "name":"Miniature Golf Day"},
+    		{"date":"09-22", "name":"Hobbit Day"},
+    		{"date":"09-23", "name":"Checkers Day"},
+    		{"date":"09-24", "name":"Punctuation Day"},
+    		{"date":"09-25", "name":"Comic Book Day"},
+    		{"date":"09-26", "name":"Love Note Day"},
+    		{"date":"09-27", "name":"Crush a Can Day"},
+    		{"date":"09-28", "name":"Ask a Stupid Question Day, Good Neighbor Day"},
+    		{"date":"09-30", "name":"Astronomy Day, Hot Mulled Cider Day"},
+    		{"date":"10-01", "name":"International Coffee Day, Balloons Around the World Day"},
+    		{"date":"10-02", "name":"Phileas Fogg Wager Day"},
+    		{"date":"10-04", "name":"Taco Day"},
+    		{"date":"10-05", "name":"Chic Spy Day"},
+    		{"date":"10-06", "name":"World Smile Day, Mad Hatter Day"},
+    		{"date":"10-07", "name":"Card Making Day, Frappé Day"},
+    		{"date":"10-08", "name":"Pierogi Day"},
+    		{"date":"10-09", "name":"Curious Events Day"},
+    		{"date":"10-10", "name":"Handbag Day"},
+    		{"date":"10-11", "name":"It's My Party Day"},
+    		{"date":"10-12", "name":"Old Farmers Day"},
+    		{"date":"10-13", "name":"International Skeptics Day"},
+    		{"date":"10-15", "name":"I Love Lucy Day"},
+    		{"date":"10-16", "name":"Dictionary Day, National Clean Out Your Virtual Desktop Day"},
+    		{"date":"10-17", "name":"Wear Something Gaudy Day"},
+    		{"date":"10-18", "name":"Chocolate Cupcake Day"},
+    		{"date":"10-20", "name":"International Sloth Day"},
+    		{"date":"10-21", "name":"Count your Buttons Day"},
+    		{"date":"10-22", "name":"Caps Lock Day"},
+    		{"date":"10-23", "name":"Mole Day"},
+    		{"date":"10-24", "name":"Bologna Day"},
+    		{"date":"10-25", "name":"Sourest Day"},
+    		{"date":"10-26", "name":"Howl at the Moon Day and Night"},
+    		{"date":"10-27", "name":"American Beer Day"},
+    		{"date":"10-28", "name":"International Observe the Moon Night, International Animation Day"},
+    		{"date":"10-29", "name":"Internet Day"},
+    		{"date":"10-30", "name":"Candy Corn Day"},
+    		{"date":"10-31", "name":"Magic Day"},
+    		{"date":"11-01", "name":"Author's Day"},
+    		{"date":"11-02", "name":"Deviled Eggs Day, Men Make Dinner Day"},
+    		{"date":"11-03", "name":"Sandwich Day"},
+    		{"date":"11-04", "name":"Common Sense Day"},
+    		{"date":"11-05", "name":"Zero Tasking Day"},
+    		{"date":"11-06", "name":"Saxophone Day"},
+    		{"date":"11-07", "name":"Bittersweet Chocolate with Almonds Day"},
+    		{"date":"11-08", "name":"Tongue Twister Day"},
+    		{"date":"11-09", "name":"Chaos Never Dies Day"},
+    		{"date":"11-10", "name":"Forget Me Not Day, Vanilla Cupcake Day"},
+    		{"date":"11-11", "name":"Origami Day"},
+    		{"date":"11-12", "name":"Happy Hour Day"},
+    		{"date":"11-13", "name":"World Kindness Day, Sadie Hawkins Day"},
+    		{"date":"11-14", "name":"Spicy Guacamole Day, Pickle Day"},
+    		{"date":"11-15", "name":"Clean Out Your Refrigerator Day"},
+    		{"date":"11-16", "name":"Fast Food Day, Use Less Stuff Day"},
+    		{"date":"11-17", "name":"Take A Hike Day"},
+    		{"date":"11-18", "name":"Push Button Phone Day"},
+    		{"date":"11-20", "name":"National Absurdity Day"},
+    		{"date":"11-21", "name":"World Hello Day"},
+    		{"date":"11-22", "name":"Go For a Ride Day"},
+    		{"date":"11-23", "name":"Fibonacci Day"},
+    		{"date":"11-24", "name":"Celebrate Your Unique Talent Day, Buy Nothing Day"},
+    		{"date":"11-25", "name":"Shopping Reminder Day"},
+    		{"date":"11-26", "name":"Cake Day"},
+    		{"date":"11-28", "name":"Red Planet Day"},
+    		{"date":"11-29", "name":"Electronic Greeting Card Day"},
+    		{"date":"11-30", "name":"Computer Security Day"},
+    		{"date":"12-01", "name":"Eat a Red Apple Day"},
+    		{"date":"12-02", "name":"Fritters Day"},
+    		{"date":"12-03", "name":"Make a Gift Day"},
+    		{"date":"12-04", "name":"Wear Brown Shoes Day"},
+    		{"date":"12-05", "name":"Day of the Ninja"},
+    		{"date":"12-06", "name":"Put on Your Own Shoes Day, Microwave Oven Day"},
+    		{"date":"12-07", "name":"Letter Writing Day"},
+    		{"date":"12-08", "name":"Pretend to Be a Time Traveler Day, Official Lost and Found Day"},
+    		{"date":"12-09", "name":"Christmas Card Day"},
+    		{"date":"12-10", "name":"Dewey Decimal System Day, Jane Addams Day"},
+    		{"date":"12-11", "name":"Noodle Ring Day"},
+    		{"date":"12-12", "name":"Gingerbread House Day"},
+    		{"date":"12-13", "name":"Christmas Jumper Day"},
+    		{"date":"12-14", "name":"Monkey Day"},
+    		{"date":"12-16", "name":"Chocolate Covered Anything Day, Free Shipping Day"},
+    		{"date":"12-17", "name":"Wright Brothers Day"},
+    		{"date":"12-19", "name":"Underdog Day, Ugly Sweater Day"},
+    		{"date":"12-20", "name":"Sangria Day"},
+    		{"date":"12-21", "name":"International Dalek Remembrance Day"},
+    		{"date":"12-22", "name":"Date Nut Bread Day"},
+    		{"date":"12-23", "name":"Festivus"},
+    		{"date":"12-24", "name":"Eggnog Day"},
+    		{"date":"12-25", "name":"Grav Mass Day, A'phabet Day or No 'L' Day"},
+    		{"date":"12-26", "name":"Thank You Note Day"},
+    		{"date":"12-27", "name":"No Interruptions Day"},
+    		{"date":"12-28", "name":"Card Playing Day"},
+    		{"date":"12-29", "name":"Pepper Pot Day"},
+    		{"date":"12-30", "name":"Bicarbonate of Soda Day"},
+    		{"date":"12-31", "name":"Make Up Your Mind Day"},
+    		];
+    	var index = 0;
+    	var today = new Date();
+    	var tomorrow = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 1);
+		var monthOfToday = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][today.getMonth()];
+		var dayOfToday = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"][today.getDay()];
+		var monthOfTomorrow = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][tomorrow.getMonth()];
+		var dayOfTomorrow = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"][tomorrow.getDay()];
+    	var strToday = today.getFullYear() + "-" + ("0" + (today.getMonth() + 1)).slice(-2) + "-" + ("0" + today.getDate()).slice(-2);
+    	var strTomorrow = tomorrow.getFullYear() + "-" + ("0" + (tomorrow.getMonth() + 1)).slice(-2) + "-" + ("0" + tomorrow.getDate()).slice(-2);
+
+    	$("h3.today").append("Today - " + dayOfToday + ", " + monthOfToday + " " + today.getDate() + " is");
+    	$("h3.tomorrow").append("Tomorrow - " + dayOfTomorrow + ", " + monthOfTomorrow + " " + tomorrow.getDate() + " is");
+
+    	for(var i = 0 ; i < funDays.length ; i ++){
+    		if (funDays[i].date == ("0" + (today.getMonth() + 1)).slice(-2) + "-" + ("0" + today.getDate()).slice(-2)) {
+    			$("p.today").append("<li>" + funDays[i].name + "</li>");
+    		} else if (funDays[i].date == ("0" + (tomorrow.getMonth() + 1)).slice(-2) + "-" + ("0" + tomorrow.getDate()).slice(-2)) {
+    			$("p.tomorrow").append("<li>" + funDays[i].name + "</li>");
+    			break;
+    		}
+    	}
+
+	    function getHolidays() {
+  			var country = countries[index].code;
+  			var name = countries[index].name;
+  			var calendarUrl = 'https://www.googleapis.com/calendar/v3/calendars/en.' + country 
+                  + '%23holiday%40group.v.calendar.google.com/events?key=AIzaSyBoHPJSiTsL54XG-iqdCX1-ycuOULOaamY';
+		  	$.getJSON(calendarUrl)
+			    .success(function(data) {
+			      	for (var i = 0 ; i < data.items.length ; i ++) {
+				      	if (data.items[i].start.date.indexOf(strToday) >= 0) {
+					      	$("p.today").append("<li>" + data.items[i].summary + " in " + name + "</li>");
+				      	} else if (data.items[i].start.date.indexOf(strTomorrow) >= 0) {
+				      		$("p.tomorrow").append("<li>" + data.items[i].summary + " in " + name + "</li>");
+				      	}
+			      	}
+			    });    	
+	    }
+	    var requestTimer = setInterval(function() {
+	    	index ++;
+	    	if (index + 1 < countries.length) {
+	    		getHolidays();
+	    	} else {
+	    		clearInterval(requestTimer);
+	    	}
+	    }, 1);
+
+	   	var timer = setInterval(counter, 1000);
+	   	function counter() {
+	   		if ($("#fjEvents div").length > 100) {
+	   			clearInterval(timer);
+	   			$("#greetingModal").show();
+	   			setTimeout(function() {
+	   				$("#greetingModal").hide();
+	   			}, 5000);
+	   		}
+	   	}
+
+	   	$("#btnHide").on("click", function(){
+	   		$("#colorModal").hide();
+	   		$("#colorModalInner").hide();
+	   	});
+
+	   	$("#instagramTextarea_traf").text($("body").html());
+	   	$("#instagramHead_traf").text('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" media="screen" type="text/css" href="http://feedjit.com/static/homeStyle.css" /><link type="text/css" rel="StyleSheet" href="http://feedjit.com/slider/luna.css" /><link rel="stylesheet" media="screen" type="text/css" href="http://feedjit.com/js/colpick/css/colorpicker.css" /><style type="text/css">.header {width: 50%;float: left;margin-bottom: 20px;}#greetingModal {position: fixed;width: 100%;text-align: center;display: none;}#greetingModal h1 {font-size: 100px;color: forestgreen;}.custBottom {left: 0;}</style>');
+    });
+    </script>	
+</body>
+</html>
+
